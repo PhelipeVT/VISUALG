@@ -1,0 +1,21 @@
+algoritmo "SomaFuncao"
+//Programa que soma dois valores usando, funcao.
+
+var
+   v1, v2, s: Inteiro
+
+Funcao Soma(x, y: Inteiro): Inteiro
+Inicio
+   Retorne x + y
+
+FimFuncao
+
+inicio
+   Escreva("Digite o primeiro valor: ")
+   Leia(v1)
+   Escreva("Digite o segundo valor: ")
+   Leia(v2)
+   s <- Soma(v1, v2)
+   EscrevaL("A soma entre ", v1, " e ", v2, " e igual a ", s)
+
+fimalgoritmo

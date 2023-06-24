@@ -1,0 +1,20 @@
+algoritmo "SomaProcedimento"
+// Programa para somar dois valores usando procedimentos.
+
+var
+ x, y: Inteiro
+ 
+Procedimento Soma(a, b: Inteiro)
+inicio
+   EscrevaL("Recebi o valor ",a)
+   Escreval("Recebi o valor ",b)
+   Escreval("A soma entre os dois e ", a + b)
+   
+FimProcedimento
+
+inicio
+    x <- 5
+    y <- 3
+    Soma(x, y)
+    
+fimalgoritmo

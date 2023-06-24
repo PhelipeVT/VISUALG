@@ -1,0 +1,30 @@
+algoritmo "FibonacciFuncao"
+//Programa que cria uma sequencia de Fibonacci utilizando uma
+//funcao com passagem de parametros por referencia.
+
+var
+  i, t1, t2, t3: Inteiro
+  
+Funcao ProxFibo(var n1, n2: Inteiro): Inteiro
+Var
+   n3: Inteiro
+   
+Inicio
+    n3 <- n1 + n2
+    n1 <- n2
+    n2 <- n3
+    Retorne n3
+    
+FimFuncao
+
+inicio
+   t1 <- 0
+   EscrevaL(t1)
+   t2 <- 1
+   EscrevaL(t2)
+   Para i <- 3 ate 5 faca
+       t3 <- ProxFibo(t1, t2)
+       EscrevaL(t3)
+   FimPara
+
+fimalgoritmo

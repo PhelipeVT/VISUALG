@@ -1,0 +1,17 @@
+algoritmo "valoresPares"
+//Programa que utiliza estrutura de repetição "Para", para mostrar de forma
+//decrescente os números pares a partir do valor inserido pelo usuario.
+var
+   cont, v: inteiro
+
+inicio
+   Escreva("Digite um valor: ")
+   Leia(v)
+   Se(v % 2 = 1) entao
+      v <- v - 1
+   Fimse
+   Para cont <- V ate 0 passo -2 faca
+      Escreval(cont)
+   Fimpara
+
+fimalgoritmo

@@ -1,0 +1,26 @@
+algoritmo "QuantosEntre0e10"
+//Programa que utiliza estrutura de repetição, para:
+//Dizer quantos dos valores inseridos pelo usuario estão entre 0 e 10;
+//Qual é a soma dos numeros impares inseridas pelo usuario.
+
+var
+   c, v, tot010, simp: inteiro
+
+inicio
+   tot010 <- 0
+   simp <- 0
+   Para c <- 1 ate 6 faca
+      Escreva("Digite um valor: ")
+      Leia(v)
+      Se (v >= 0) e (v <= 10) entao
+         tot010 <- tot010 + 1
+      Fimse
+      se (v%2=1) entao
+         simp <- simp + v
+      fimse
+   Fimpara
+   
+   Escreval("Ao todo foram", tot010, " valores entre 0 e 10")
+   Escreval("A soma de impares foi", simp)
+
+fimalgoritmo

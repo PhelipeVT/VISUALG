@@ -1,0 +1,20 @@
+algoritmo "Fibonacci"
+//Programa que utiliza estrutura de repetição, para mostrar os
+//15 primeiros valores de uma serie de Fibonacci.
+
+var
+   c, v1, v2, v3 : Inteiro
+
+inicio
+   v1 <- 0
+   Escreva (v1)
+   v2 <- 1
+   Escreva (v2)
+   Para c <- 3 ate 15 faca
+      v3 <- v1 + v2
+      Escreva (v3)
+      v1 <- v2
+      v2 <- v3
+   FimPara
+
+fimalgoritmo

@@ -1,0 +1,24 @@
+algoritmo "ParImparFuncao"
+//Programa que, utiliza função, para verifica se um numero e PAR ou IMPAR.
+
+var
+  n: Inteiro
+  r: Caractere
+
+Funcao ParImpar(v: Inteiro): Caractere
+inicio
+   Se (v % 2 = 0) entao
+      Retorne "PAR"
+   senao
+      Retorne "IMPAR"
+   FimSe
+   
+FimFuncao
+
+inicio
+   Escreva("Digite um numero: ")
+   Leia(n)
+   r <- ParImpar(n)
+   Escreva ("O numero ", n, " e ", r)
+
+fimalgoritmo

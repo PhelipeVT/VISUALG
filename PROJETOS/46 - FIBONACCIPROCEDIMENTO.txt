@@ -1,0 +1,29 @@
+algoritmo "FibonacciProcedimento"
+//Programa que exibir os 10 primeiros numeros de um Fibonacci usando
+//procedimentos com passagem de parametros por referencia.
+
+var
+  i, t1, t2: Inteiro
+  
+Procedimento ProxFibo(var n1, n2: Inteiro)
+Var
+   n3: Inteiro
+   
+Inicio
+    n3 <- n1 + n2
+    EscrevaL(n3)
+    n1 <- n2
+    n2 <- n3
+    
+FimProcedimento
+
+inicio
+   t1 <- 0
+   EscrevaL(t1)
+   t2 <- 1
+   EscrevaL(t2)
+   Para i <- 3 ate 10 faca
+       ProxFibo(t1, t2)
+   FimPara
+   
+fimalgoritmo

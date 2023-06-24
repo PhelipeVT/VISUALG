@@ -1,0 +1,35 @@
+algoritmo "DetectordePeso"
+//Programa para detectar qual e a pessoa mais pesada, utilizando rotinas.
+
+var
+   i: Inteiro
+   n, pes: Caractere
+   p, mai: Real
+
+Procedimento Topo()
+inicio
+   LimpaTela
+   EscrevaL("------------------------------------")
+   EscrevaL(" Detector de Peso ")
+   EscrevaL(" Maior Peso ate agora: ", mai, "Kg")
+   EscrevaL("------------------------------------")
+
+FimProcedimento
+
+inicio
+   Topo()
+   Para i <- 1 ate 5 faca
+      Escreva("Digite o nome: ")
+      Leia(n)
+      Escreva("Digite o peso de ", n, ": ")
+      Leia(p)
+      Se (p > mai) entao
+         mai <- p
+         pes <- n
+      FimSe
+      Topo()
+   FimPara
+   Topo()
+   EscrevaL("A pessoa mais pesada foi ", pes, ", com ", mai, " quilos.")
+
+fimalgoritmo
